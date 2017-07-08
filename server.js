@@ -37,8 +37,7 @@ hbs.registerHelper('screamIt', (text) => {
 });
 
 app.get('/', (req,res) => {
-	// res.send('<h1>Hello Express!</h1)>');
-	res.render('home', {
+		res.render('home', {
 		pageTitle:'never leave me',
 		welcomeMessage: 'WELCOME HOME MY DARLINGS'
 	});
@@ -53,6 +52,7 @@ app.get('/about', (req,res) => {
 
 app.get('/projects', (req,res) => {
 	res.render('projects', {
+		pageTitle:'Do you see what i have done?',
 		message: 'Please view my myriad projects!' 
 	});
 });
